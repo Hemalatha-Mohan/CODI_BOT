@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <processDefinition name="SampleJDBCProcess">
 <activities>
-<jdbcActivity name="UpdateOrder">
+ <jdbcActivity name="UpdateOrder">
 <username>${DB_USER}</username>  <!-- Correct: variable -->
 <password>${DB_PASSWORD}</password> <!-- Correct: variable -->
 <timeout>30000</timeout>
