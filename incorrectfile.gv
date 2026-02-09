@@ -7,13 +7,6 @@
 <!-- Missing <timeout> element -->
 <query>SELECT * FROM Customers</query>
 </jdbcActivity>
- 
-        <jdbcActivity name="UpdateOrder">
-<username>${DB_USER}</username>  <!-- Correct: variable -->
-<password>${DB_PASSWORD}</password> <!-- Correct: variable -->
-<timeout>80000</timeout>
-<query>UPDATE Orders SET status='processed'</query>
-</jdbcActivity>
 </activities>
 </processDefinition>
 
