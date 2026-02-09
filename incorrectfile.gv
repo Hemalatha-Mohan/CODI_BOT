@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <processDefinition name="SampleJDBCProcess">
 <activities>
-
+<jdbcActivity name="SelectCustomer">
+<username>admin</username>       <!-- Hardcoded username -->
+<password>password123</password> <!-- Hardcoded password -->
+<timeout>30000</timeout>  <!-- Hardcoded timeout -->
+<query>SELECT * FROM Customers</query>
+</jdbcActivity>
         <jdbcActivity name="UpdateOrder">
 <username>${DB_USER}</username>
 <password>${DB_PASSWORD}</password> 
@@ -10,5 +15,4 @@
 </jdbcActivity>
 </activities>
 </processDefinition>
- 
  
